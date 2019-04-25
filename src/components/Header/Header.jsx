@@ -82,6 +82,7 @@ class Header extends React.Component {
 
           <AppBar className={appBarClasses}>
 
+     <frosted-glass blur-amount="10px" overlay-color="66666652" class="nav-container1">
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>
@@ -123,6 +124,7 @@ class Header extends React.Component {
           </Drawer>
         </Hidden>
 
+      </frosted-glass>
       </AppBar>
         </React.Fragment>
     );
@@ -148,7 +150,7 @@ Header.propTypes = {
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
-  brand: PropTypes.string,
+  brand: PropTypes.image,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from

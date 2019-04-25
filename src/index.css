@@ -37,38 +37,46 @@ h1 {
 
 }
 
-p {
-    font-family: Helvetica Neue;
-    font-size: 100px;
-}
-
 .text_box {
     width: 500px;
     font-family: Helvetica Neue;
     font-weight: 200;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     position: relative;
 
 }
+
+.text_box2 {
+    width: 400px;
+    font-family: Helvetica Neue;
+    font-weight: 200;
+    color: white;
+    font-size: 17px;
+    position: relative;
+
+}
+
 
 .paragraph_right {
     position: absolute;
     padding-top: 100px;
     left: 800px;
+    z-index: 1000 !important;
 }
 
 .paragraph_right2 {
     position: absolute;
-    padding-top: 1350px;
+    padding-top: 1300px;
     left: 450px;
 }
 
 
 .paragraph_left {
     position: absolute;
-    top: 600px;
+    top: 495px;
     left: 100px;
+    z-index: 1000 !important;
 }
 
 
@@ -76,7 +84,6 @@ p {
     position: relative;
     min-width: 100vw;
     top: 0px;
-    z-index: 5;
 }
 .position2 {
     position: relative;
@@ -89,53 +96,61 @@ p {
     position: relative;
     min-width: 100vw;
     bottom: 3600px;
+    background-image: linear-gradient(#5A8F29 0px, #0398D7 600px);
+    background-image: linear-gradient(#8000FF 1200px, #E64784 1800px);
     z-index: 1;
 }
 
-.au_gradient1 {
-    height: 1800px;
-    background-image: linear-gradient(#5A8F29 0px, #0398D7 600px);
-    position: inherit;
-    z-index: 6;
-}
 .bg_1 {
     height: 1800px;
     color: grey;
     position: relative;
-    z-index: 0;
-    max-width: 100%;
+    background: linear-gradient(180deg, #5a8f29, #0386be, #5701ad, #ff70a7);
+    background-size: 100% 175%;
+
+    -webkit-animation: AnimationName 44s ease infinite;
+    -moz-animation: AnimationName 44s ease infinite;
+    animation: AnimationName 44s ease infinite;
 }
 
-.au_gradient2 {
-    height: 1800px;
-    background-image: linear-gradient(#0398D7 600px, #8000FF 1200px);
-    position: inherit;
-    z-index: 4;
+.bg_2 {
+    height: 2400px;
+    color: grey;
+    position: relative;
+    background: linear-gradient(180deg, #a21a51, #d8a475, #5c50a7);
+    background-size: 200% 200%;
+
+    -webkit-animation: AnimationName 44s ease infinite;
+    -moz-animation: AnimationName 44s ease infinite;
+    animation: AnimationName 44s ease infinite;
+
 }
 
-.au_gradient3 {
-    height: 1800px;
-    background-image: linear-gradient(#8000FF 1200px, #E64784 1800px);
-    position: inherit;
-    z-index: 2;
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
 
-
-.transparentBlurBar: {
-    height: 200px;
-    color: #FFFFFF;
-    position: fixed;
-  }
-
-.superr-header {
-  height: 100px;
-  position: fixed;
-  opacity: 1;
-  backdrop-filter: blur(5px);
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 90 !important;
+.buttonPosition{
+    position: relative;
+    left: 130px;
 }
 
-
+.logoPosition {
+    height:24%;
+    width:24%;
+    position: relative;
+    right: 290px;
+    bottom: 0px;
+}
