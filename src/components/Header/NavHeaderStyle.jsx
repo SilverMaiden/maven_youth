@@ -17,10 +17,6 @@ class NavHeaderStyled extends React.Component{
                   brand= {<img src={require('../../assets/logo-maven.png')} className="logoPosition" />}
                   rightLinks={<HeaderLinks />}
                   fixed
-                  changeColorOnScroll={{
-                    height: 700,
-                    color: "rose"
-                  }}
 
 
                   {...rest} >

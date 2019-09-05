@@ -7,29 +7,16 @@
 }
 
 /* Nav */
-.nav-container1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4.0rem;
-}
-
-.nav-container2 {
+.nav-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 5.625rem;
-  z-index: 1000000;
+  z-index: 1;
 }
 
-
-
-.nav-container1 > .glass-content {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.nav-container2 > .glass-content {
+.nav-container > .glass-content {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -76,7 +63,7 @@
 /* Hero */
 .hero-container {
   background-color: rgb(141, 141, 141);
-  background-image: url('http://your-photography.com/files/2016/02/HH0A5456.jpg');
+  background-image: url('./assets/bannerSharp.png');
   background-repeat: no-repeat;
   background-size: 100%;
   color: black;
@@ -124,13 +111,9 @@
 }
 
 @media all and (max-width: 31.25rem) {
-  .nav-container1{
+  .nav-container {
     height: 4.5rem;
   }
-  .nav-container2{
-    height: 4.5rem;
-  }
-
   .hero-container {
     padding-bottom: 110%;
     background-position: 30% 0px;
@@ -248,6 +231,7 @@
   top: -100vh;
   left: 0;
   right: 0;
+  z-index: 999999;
 }
 
 .footer {
@@ -275,3 +259,4 @@
   left: 0;
   right: 0;
 }
+

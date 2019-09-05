@@ -23,16 +23,19 @@ body {
     
 }
 
+ul {
+    list-style: square;
+    color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 h1 {
-    font-family: Helvetica Neue;
     font-style: italic;
     font-weight: 500;
-    color: white;
     font-size: 40px;
 
 }
@@ -57,52 +60,16 @@ h1 {
 
 }
 
-
-.paragraph_right {
-    position: absolute;
-    padding-top: 100px;
-    left: 800px;
-    z-index: 1000 !important;
-}
-
-.paragraph_right2 {
-    position: absolute;
-    padding-top: 1300px;
-    left: 450px;
-}
-
-
-.paragraph_left {
-    position: absolute;
-    top: 495px;
-    left: 100px;
-    z-index: 1000 !important;
-}
-
-
-.position1 {
-    position: relative;
-    min-width: 100vw;
-    top: 0px;
-}
-.position2 {
-    position: relative;
-    min-width: 100vw;
-    bottom: 1800px;
-    z-index: 3;
-}
-
-.position3 {
-    position: relative;
-    min-width: 100vw;
-    bottom: 3600px;
-    background-image: linear-gradient(#5A8F29 0px, #0398D7 600px);
-    background-image: linear-gradient(#8000FF 1200px, #E64784 1800px);
-    z-index: 1;
+.test_bg {
+    height: 1800px;
+    width: auto;
+    background: linear-gradient(180deg, #5a8f29, #0386be, #5701ad, #ff70a7);
+    background-size: 100% 175%;
 }
 
 .bg_1 {
     height: 1800px;
+    width: auto;
     color: grey;
     position: relative;
     background: linear-gradient(180deg, #5a8f29, #0386be, #5701ad, #ff70a7);
@@ -113,17 +80,45 @@ h1 {
     animation: AnimationName 44s ease infinite;
 }
 
-.bg_2 {
-    height: 2400px;
-    color: grey;
-    position: relative;
-    background: linear-gradient(180deg, #a21a51, #d8a475, #5c50a7);
-    background-size: 200% 200%;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue;
+    color: white;
+}
+.paragraph_right2 {
+    position: absolute;
+    padding-top: 1300px;
+    left: 450px;
+}
 
-    -webkit-animation: AnimationName 44s ease infinite;
-    -moz-animation: AnimationName 44s ease infinite;
-    animation: AnimationName 44s ease infinite;
 
+.text_styling {
+    font-family: Helvetica Neue;
+    font-weight: 200;
+    color: white;
+    font-size: 17px;
+    line-height: 130%;
+
+
+}
+
+div.left, div.right {
+    width: 35%;
+    font-style: italic;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+div.left {
+    align-self: flex-start;
+    margin-left: 150px;
+}
+
+div.right {
+    align-self: flex-end;
+    margin-right: 150px;
+    margin-top: 10%;
 }
 
 @-webkit-keyframes AnimationName {
